@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-06T01:22:30 IST" name="Default suite" finished-at="2022-12-06T01:22:43 IST" duration-ms="12917">
+    <groups>
+      <group name="regression">
+        <method signature="RegressionTesting$RegressionTest.closeBrowser()[pri:6, instance:RegressionTesting$RegressionTest@7205765b]" name="closeBrowser" class="RegressionTesting$RegressionTest"/>
+        <method signature="RegressionTesting$RegressionTest.launchBrowser()[pri:1, instance:RegressionTesting$RegressionTest@7205765b]" name="launchBrowser" class="RegressionTesting$RegressionTest"/>
+        <method signature="RegressionTesting$RegressionTest.verifyGcreddyTitle()[pri:5, instance:RegressionTesting$RegressionTest@7205765b]" name="verifyGcreddyTitle" class="RegressionTesting$RegressionTest"/>
+        <method signature="RegressionTesting$RegressionTest.verifyGcritTitle()[pri:4, instance:RegressionTesting$RegressionTest@7205765b]" name="verifyGcritTitle" class="RegressionTesting$RegressionTest"/>
+        <method signature="RegressionTesting$RegressionTest.verifyYahooTitle()[pri:3, instance:RegressionTesting$RegressionTest@7205765b]" name="verifyYahooTitle" class="RegressionTesting$RegressionTest"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="RegressionTesting$RegressionTest.closeBrowser()[pri:6, instance:RegressionTesting$RegressionTest@7205765b]" name="closeBrowser" class="RegressionTesting$RegressionTest"/>
+        <method signature="RegressionTesting$RegressionTest.launchBrowser()[pri:1, instance:RegressionTesting$RegressionTest@7205765b]" name="launchBrowser" class="RegressionTesting$RegressionTest"/>
+        <method signature="RegressionTesting$RegressionTest.verifyGcritTitle()[pri:4, instance:RegressionTesting$RegressionTest@7205765b]" name="verifyGcritTitle" class="RegressionTesting$RegressionTest"/>
+        <method signature="RegressionTesting$RegressionTest.verifyGoogleTitle()[pri:2, instance:RegressionTesting$RegressionTest@7205765b]" name="verifyGoogleTitle" class="RegressionTesting$RegressionTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2022-12-06T01:22:30 IST" name="Default test" finished-at="2022-12-06T01:22:43 IST" duration-ms="12917">
+      <class name="RegressionTesting$RegressionTest">
+        <test-method signature="launchBrowser()[pri:1, instance:RegressionTesting$RegressionTest@7205765b]" started-at="2022-12-06T01:22:30 IST" name="launchBrowser" finished-at="2022-12-06T01:22:34 IST" duration-ms="3589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyGoogleTitle()[pri:2, instance:RegressionTesting$RegressionTest@7205765b]" started-at="2022-12-06T01:22:34 IST" name="verifyGoogleTitle" finished-at="2022-12-06T01:22:35 IST" duration-ms="1381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGoogleTitle -->
+        <test-method signature="verifyYahooTitle()[pri:3, instance:RegressionTesting$RegressionTest@7205765b]" started-at="2022-12-06T01:22:35 IST" name="verifyYahooTitle" finished-at="2022-12-06T01:22:37 IST" duration-ms="1709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyYahooTitle -->
+        <test-method signature="verifyGcritTitle()[pri:4, instance:RegressionTesting$RegressionTest@7205765b]" started-at="2022-12-06T01:22:37 IST" name="verifyGcritTitle" finished-at="2022-12-06T01:22:39 IST" duration-ms="2783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGcritTitle -->
+        <test-method signature="verifyGcreddyTitle()[pri:5, instance:RegressionTesting$RegressionTest@7205765b]" started-at="2022-12-06T01:22:39 IST" name="verifyGcreddyTitle" finished-at="2022-12-06T01:22:43 IST" duration-ms="3222" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Software testing | Manual Testing | UFT | Selenium | Java | SQL | Python Tutorials] but found [Software Testing – A blog about Manual Testing, Selenium, UFT/QTP, SQL, Java and Python Step by Step Tutorials by G C Reddy.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Software testing | Manual Testing | UFT | Selenium | Java | SQL | Python Tutorials] but found [Software Testing – A blog about Manual Testing, Selenium, UFT/QTP, SQL, Java and Python Step by Step Tutorials by G C Reddy.]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at RegressionTesting$RegressionTest.verifyGcreddyTitle(RegressionTesting.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGcreddyTitle -->
+        <test-method signature="closeBrowser()[pri:6, instance:RegressionTesting$RegressionTest@7205765b]" started-at="2022-12-06T01:22:43 IST" name="closeBrowser" finished-at="2022-12-06T01:22:43 IST" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- RegressionTesting$RegressionTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
