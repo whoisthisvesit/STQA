@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-06T01:13:43 IST" name="Default suite" finished-at="2022-12-06T01:13:51 IST" duration-ms="8027">
+    <groups>
+    </groups>
+    <test started-at="2022-12-06T01:13:43 IST" name="Default test" finished-at="2022-12-06T01:13:51 IST" duration-ms="8027">
+      <class name="ValidationTesting">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:ValidationTesting@1e1a0406]" started-at="2022-12-06T01:13:40 IST" name="openBrowser" finished-at="2022-12-06T01:13:43 IST" duration-ms="3177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="loginOHM()[pri:0, instance:ValidationTesting@1e1a0406]" started-at="2022-12-06T01:13:43 IST" name="loginOHM" finished-at="2022-12-06T01:13:48 IST" duration-ms="4474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOHM -->
+        <test-method signature="myInfo()[pri:1, instance:ValidationTesting@1e1a0406]" started-at="2022-12-06T01:13:48 IST" name="myInfo" finished-at="2022-12-06T01:13:49 IST" duration-ms="1881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myInfo -->
+        <test-method signature="logout()[pri:2, instance:ValidationTesting@1e1a0406]" started-at="2022-12-06T01:13:49 IST" name="logout" finished-at="2022-12-06T01:13:51 IST" duration-ms="1642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- ValidationTesting -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
